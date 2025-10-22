@@ -24,35 +24,35 @@ Built for **hackathons, teams, learners, and personal use,** Fluentia ensures **
 
 <br/>
 
-## ✨ Features
+## Features
 
-**💬 Real-Time Messaging (Powered by Stream API)**  
+**Real-Time Messaging (Powered by Stream API)**  
 - 1-to-1 and group chat  
 - Typing indicators & read receipts  
 - Online/offline presence  
 - Emoji & media sharing support  
 
-**🎥 Video Calling (Powered by Stream API)**  
+**Video Calling (Powered by Stream API)**  
 - High-quality 1-to-1 video calls  
 - Call controls: mute/unmute, react, record, end call  
 - Screen sharing during video calls  
 - Low-latency, real-time performance  
 
-**🎨 User Experience**  
+**User Experience**  
 - Modern responsive UI (React + Bootstrap)  
 - Sidebar for quick navigation  
 - Notifications for new messages & missed calls  
 - Light & Dark theme support  
 - Dicebear Avatars
 
-**🔐 Security & Reliability**  
+**Security & Reliability**  
 - JWT authentication for secure login/signup  
 - MongoDB Atlas for cloud-based storage  
 - Stream API ensures reliable real-time communication  
 
 <br/>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React.js, Bootstrap  
 - **Backend:** Node.js, Express.js  
@@ -64,13 +64,7 @@ Built for **hackathons, teams, learners, and personal use,** Fluentia ensures **
 
 <br/>
 
-## 🏗️ Architecture  
-
-- **Workflow**  
-
-<br/>
-
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Group video calls  
 - Voice messages & reactions  
