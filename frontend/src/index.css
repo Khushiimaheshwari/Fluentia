@@ -1,0 +1,194 @@
+:root {
+  --bg-color: #ffffff;
+  --primary-color: #5a67d8;
+  --secondary-color: #8b5cf6;
+  --text-color: #1a202c;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --hover-bg: #f7fafc;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Theme-specific styles */
+.theme-dark {
+  --bg-color: #1f2937;
+  --primary-color: #8b5cf6;
+  --secondary-color: #ec4899;
+  --text-color: #e2e8f0;
+  --border-color: #374151;
+  --card-bg: #1f2937;
+  --hover-bg: #374151;
+}
+
+.theme-forest {
+  --bg-color: #1f1d1d;
+  --primary-color: #3ebc96;
+  --secondary-color: #70c217;
+  --text-color: #e2e8f0;
+}
+
+.theme-bumblebee {
+  --bg-color: #ffffff;
+  --primary-color: #f8e36f;
+  --secondary-color: #f0d50c;
+  --text-color: #1c1917;
+}
+
+.theme-emerald {
+  --bg-color: #ffffff;
+  --primary-color: #66cc8a;
+  --secondary-color: #3b82f6;
+  --text-color: #1e3a8a;
+}
+
+.theme-synthwave {
+  --bg-color: #2d1b69;
+  --primary-color: #e779c1;
+  --secondary-color: #58c7f3;
+  --text-color: #f8f8f2;
+}
+
+.theme-cyberpunk {
+  --bg-color: #ffee00;
+  --primary-color: #ff7598;
+  --secondary-color: #75d1f0;
+  --text-color: #1a103d;
+}
+
+.theme-dracula {
+  --bg-color: #282a36;
+  --primary-color: #ff79c6;
+  --secondary-color: #bd93f9;
+  --text-color: #f8f8f2;
+}
+
+.theme-autumn {
+  --bg-color: #f2f2f2;
+  --primary-color: #8c1f11;
+  --secondary-color: #f28c18;
+  --text-color: #6f4930;
+}
+
+
+
+.theme-nord {
+  --bg-color: #eceff4;
+  --primary-color: #5e81ac;
+  --secondary-color: #81a1c1;
+  --text-color: #3b4252;
+}
+
+
+
+/* Theme dropdown styles */
+.theme-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+}
+
+.theme-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.theme-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 3px;
+}
+
+.theme-dropdown .dropdown-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.str-chat__channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--bg-color), var(--hover-bg));
+  height: 100%;
+}
+
+.str-chat__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 80% !important;
+  margin: 0 auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background-color: var(--card-bg);
+}
+
+.str-chat__list {
+  background-color: var(--card-bg);
+  padding: 12px;
+}
+
+.str-chat__list-notifications {
+  display: none;
+}
+
+.str-chat__message-input {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Bootstrap overrides for theme support */
+.navbar-light {
+  background-color: var(--card-bg) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+.btn-light {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.btn-light:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.btn-outline-secondary {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Page loader styles */
+.page-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
