@@ -22,7 +22,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:3000",
-            "https://fluentia-backend.onrender.com"
+            "https://fluentia-frontend-steel.vercel.app"
         ],
         credentials: true 
     })
