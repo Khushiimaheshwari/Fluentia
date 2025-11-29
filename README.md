@@ -59,7 +59,7 @@ Built for **hackathons, teams, learners, and personal use,** Fluentia ensures **
 - **Real-Time Messaging & Calls:** Stream API  
 - **Database:** MongoDB Atlas  
 - **Authentication:** JWT (JSON Web Tokens)  
-- **Deployment:** Render  
+- **Deployment:** Vercel (Frontend) and Render (Backend)  
 - **Version Control:** Git & GitHub  
 
 <br/>
@@ -72,3 +72,7 @@ Built for **hackathons, teams, learners, and personal use,** Fluentia ensures **
 - AI-powered language practice partner  
 
 <br/>
+
+## Live Demo
+
+https://fluentia-frontend-steel.vercel.app/
