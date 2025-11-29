@@ -20,7 +20,10 @@ const __dirname= path.resolve();
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: [
+            "http://localhost:3000",
+            "https://fluentia-backend.onrender.com"
+        ],
         credentials: true 
     })
 );
