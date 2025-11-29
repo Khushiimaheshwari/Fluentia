@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_MODE === "production" ? "http://localhost:5000/api" : "http://localhost:5000/api";
+const BASE_URL = process.env.REACT_APP_MODE === "production" ? "https://fluentia-backend.onrender.com/api" : "http://localhost:5000/api";
 
 export const axiosInstance = axios.create({
     baseURL: BASE_URL,
