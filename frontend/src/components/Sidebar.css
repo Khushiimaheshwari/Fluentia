@@ -1,0 +1,129 @@
+.sidebar {
+  background: linear-gradient(180deg, #0a2540 0%, #112d4e 100%);
+  backdrop-filter: blur(14px);
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-header {
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #d1d5db;
+  padding: 14px 20px;
+  border-radius: 12px;
+  margin: 6px 14px;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.sidebar-link i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(0, 114, 255, 0.15);
+  color: #ffffff;
+  transform: translateX(6px) scale(1.03);
+}
+
+.sidebar-link:hover i {
+  transform: scale(1.2);
+}
+
+.sidebar-link.active {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 123, 255, 0.5);
+}
+
+.sidebar-user {
+  padding: 1rem;
+  margin: 1.2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+}
+
+.sidebar-user .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-user .user-info h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.sidebar-user .user-info span {
+  font-size: 12px;
+  color: #00ff88;
+  font-weight: 500;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0, 114, 255, 0.6);
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 114, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    min-width: 220px;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}

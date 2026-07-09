@@ -1,0 +1,20 @@
+{
+  "short_name": "Fluentia",
+  "name": "Fluentia - Find Your Flow",
+  "icons": [
+    {
+      "src": "media/logo.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    },
+    {
+      "src": "media/logo.png",
+      "sizes": "550x550",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0056b3",
+  "background_color": "#ffffff"
+}
