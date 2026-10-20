@@ -14,6 +14,7 @@ import { connectDB } from "./lib/db.js";
 const corsOrigins = [
     "http://localhost:3000",
     "https://fluentia-frontend-steel.vercel.app",
+    "https://frontend-ochre-omega-38.vercel.app",
 ];
 
 if (process.env.FRONTEND_URL) {
